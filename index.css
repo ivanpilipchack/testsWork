@@ -1,0 +1,597 @@
+html,
+.body {
+    background-image: url('img/m92.jpg');
+    background-position: center;
+    background-size: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, "Segoe UI", "Roboto", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", sans-serif;
+}
+
+.container {
+    max-width: 83%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+
+/* haeder menu and button for the navBar */
+
+.header_menu {
+    background-color: #ffffff;
+    margin-top: 102px;
+    margin-bottom: 13px;
+    width: 100%;
+}
+
+.menu_logo {
+    float: left;
+    width: 7%;
+    background: #56ccc8;
+    padding: 21px 16px;
+}
+
+.logo_el {
+    background-color: #ffffff;
+    width: 22px;
+    height: 3px;
+    margin: 6px 5px;
+    margin-left: 8px;
+    display: block;
+}
+
+.add {
+    background-color: rgb(119, 104, 22);
+    box-shadow: 0 0 20px;
+}
+
+.addEls {
+    background: rgb(37, 32, 32);
+}
+
+
+/* menu from lincks and icons */
+
+nav {
+    width: 78%;
+    float: left;
+    background-color: #ffffff;
+    margin-left: 0px;
+    padding-top: 24px;
+}
+
+.menu_lists {
+    list-style: none;
+}
+
+.lists_punct {
+    display: inline;
+    margin: 23px 33px;
+}
+
+.lists_link {
+    text-decoration: none;
+    color: #475055;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.menu_search {
+    margin-left: 170px;
+    margin-right: 20px;
+}
+
+.lists_link:hover {
+    text-decoration: none;
+    color: #56ccc8;
+}
+
+.menu_profile {
+    width: 7%;
+    float: left;
+}
+
+.icons_profile {
+    margin: 29px 10px;
+    width: 16px;
+    height: 16px;
+}
+
+.navBar_wrap {
+    display: flex;
+}
+
+.navBar_left {
+    width: 23%;
+}
+
+.widget {
+    display: block;
+    background: #fff;
+}
+
+.widget .side_bar {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+}
+
+.widget .dropdown {
+    border-bottom: 1px solid #eaeaea;
+    padding-bottom: 17px;
+    padding-left: 15px;
+    padding-top: 16px;
+}
+
+.dropdown:hover {
+    box-shadow: 0 1px 0 #56ccc8;
+    background-color: #56ccc8;
+}
+
+.widget .dropdown:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 15;
+}
+
+.widget .navBar_link {
+    text-decoration: none;
+    display: inline-block;
+    color: #475055;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20.3px;
+}
+
+.widget li:before {
+    margin-right: 14px;
+}
+
+.widget li:nth-child(1):before {
+    content: "";
+    display: inline-block;
+    width: 2.4rem;
+    height: 2.4rem;
+    vertical-align: middle;
+    background: url('img/home-icon.png') no-repeat center;
+    background-size: 100%;
+}
+
+.widget li:nth-child(2):before {
+    content: "";
+    display: inline-block;
+    width: 2.4rem;
+    height: 2.4rem;
+    vertical-align: middle;
+    background: url('img/shop-icon.png') no-repeat center;
+    background-size: 100%;
+}
+
+.widget li:nth-child(3):before {
+    content: "";
+    display: inline-block;
+    width: 2.4rem;
+    height: 2.4rem;
+    vertical-align: middle;
+    background: url('img/email-icon.png') no-repeat center;
+    background-size: 100%;
+}
+
+.widget li:nth-child(4):before {
+    content: "";
+    display: inline-block;
+    width: 2.4rem;
+    height: 2.4rem;
+    vertical-align: middle;
+    background: url('img/users-icon.png') no-repeat center;
+    background-size: 100%;
+}
+
+.widget li:nth-child(5):before {
+    content: "";
+    display: inline-block;
+    width: 2.4rem;
+    height: 2.4rem;
+    vertical-align: middle;
+    background: url('img/trophy-icon.png') no-repeat center;
+    background-size: 100%;
+}
+
+.widget li:nth-child(6):before {
+    content: "";
+    display: inline-block;
+    width: 2.4rem;
+    height: 2.4rem;
+    vertical-align: middle;
+    background: url('img/info-icon.png') no-repeat center;
+    background-size: 100%;
+}
+
+.widget li:nth-child(7):before {
+    content: "";
+    display: inline-block;
+    width: 2.4rem;
+    height: 2.4rem;
+    vertical-align: middle;
+    background: url('img/email-icon.png') no-repeat center;
+    background-size: 100%;
+}
+
+.sub {
+    display: none;
+    width: 100%;
+    list-style: none;
+    background-color: #c5cdd1;
+    padding-top: 34px;
+    padding-right: 26px;
+    padding-left: 10px;
+}
+
+.sub_dropdown {
+    margin-bottom: 33px;
+}
+
+.sub_dropdown:before {
+    margin-right: 18px;
+}
+
+.sub li:nth-child(1):before {
+    margin-top: 10px;
+    content: "";
+    display: inline-block;
+    width: 2.4rem;
+    height: 3.0rem;
+    vertical-align: middle;
+    background: url('img/phone-icon.png') no-repeat center;
+    background-size: 100%;
+}
+
+.sub li:nth-child(2):before {
+    margin-top: 10px;
+    content: "";
+    display: inline-block;
+    width: 2.4rem;
+    height: 3.1rem;
+    vertical-align: middle;
+    background: url('img/pointer-icon.png') no-repeat center;
+    background-size: 100%;
+}
+
+.sub li:nth-child(3):before {
+    margin-top: 10px;
+    content: "";
+    display: inline-block;
+    width: 2.4rem;
+    height: 3.0rem;
+    vertical-align: middle;
+    background: url('img/email-icon-.png') no-repeat center;
+    background-size: 100%;
+}
+
+.span {
+    margin-left: 45px;
+}
+
+.navBar_link {
+    color: #ffffff;
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.navBar_link:hover {}
+
+.accordion_wrap {
+    width: 100%;
+    box-shadow: 0 1px 0 #445e78;
+    background-color: #152840;
+    padding: 0px 15px 15px 20px;
+    border-bottom: 1px solid #49637d;
+}
+
+.accordion_wrap:hover {
+    background-color: #263a54;
+}
+
+.accordion_head {
+    width: 100%;
+    min-height: 40px;
+}
+
+.head {
+    float: left;
+    color: #56ccc8;
+    font-size: 16px;
+    font-weight: 400;
+    /* Text style for "Software &" */
+    font-family: "Roboto" sans-serif;
+    font-weight: 300;
+}
+
+.previous {
+    margin-top: 20px;
+    float: right;
+}
+
+.opacity {
+    opacity: 0.5;
+}
+
+.accordion_menu {
+    display: none;
+    margin-top: 15px;
+    padding-left: 0px;
+    list-style: none;
+}
+
+.accordion_punct {
+    min-height: 25px;
+    color: #ffffff;
+    font-family: "Roboto";
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+.add_accordins {
+    transition: 0.5s;
+    transform: rotate(90deg);
+}
+
+.navBar_rigth {
+    display: flex;
+    width: 50%;
+    margin-left: 41px;
+}
+
+.icons_wrap {
+    display: none;
+    width: 50%;
+    background: #ffffff;
+    padding: 20px;
+}
+
+.user {
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+.icons {
+    list-style: none;
+    padding-left: 0px;
+    margin: 15px 0px 15px 19px;
+}
+
+.fa {
+    font-family: "Font Awesome";
+    padding: 8px;
+    font-size: 20px;
+    width: 31px;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    background-color: #c5cdd1;
+}
+
+.fa:hover {
+    opacity: 0.7;
+    background: #4fc6f8;
+    color: white;
+    text-decoration: none;
+}
+
+.fa-facebook {
+    color: white;
+}
+
+.fa-twitter {
+    color: white;
+}
+
+.fa-google {
+    color: white;
+}
+
+.icons_list {
+    margin-bottom: 20px;
+}
+
+.icons_list:hover {
+    color: #4fc6f8;
+}
+
+.fa-rss {
+    color: white;
+}
+
+.fa-pinterest {
+    color: white;
+}
+
+.icon_text {
+    margin-left: 18px;
+    color: #475055;
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.icon_text:hover {
+    color: #72d1f9;
+}
+
+.icons_buttons {
+    width: 50%;
+}
+
+.icons_facebock {
+    width: 100%;
+    min-height: 190px;
+    background-color: #4d6baa;
+    padding: 21px;
+}
+
+.icons_twitter {
+    margin-top: 14px;
+    width: 100%;
+    min-height: 190px;
+    background-color: #4fc6f8;
+    padding: 21px;
+}
+
+.number {
+    margin-top: 78px;
+    color: #ffffff;
+    font-family: "Roboto" sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 28px;
+    text-transform: uppercase;
+}
+
+.facebook_head {
+    display: flex;
+}
+
+.head_text {
+    position: relative;
+    top: 68px;
+    left: 80px;
+    color: #ffffff;
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+}
+
+.follow {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    top: 79px;
+    left: 96px;
+}
+
+.two {
+    left: 114px;
+}
+
+.sign_wrap {
+    float: right;
+    margin-top: 11px;
+    width: 50%;
+}
+
+.sign_icon {
+    margin-bottom: 14px;
+    width: 100%;
+    background: #ffffff;
+    padding: 29px;
+    text-align: center;
+}
+
+.sign_head {
+    color: #475055;
+    font-family: "Roboto";
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.sign_text_forms {
+    color: #475055;
+    font-family: "Roboto";
+    font-size: 12px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 28px;
+}
+
+.email {
+    width: 70%;
+    min-height: 38px;
+    border: 1px solid #dde2e4;
+    padding: 11px;
+    outline: none;
+}
+
+input::-webkit-input-placeholder {
+    color: #a3abaf;
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+}
+
+.sign_text {
+    font-family: "Roboto";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.submit {
+    outline: none;
+    width: 20%;
+    min-height: 39px;
+    background-color: #ea6060;
+    color: #ffffff;
+    font-family: "Roboto";
+    border-radius: 5px;
+    border: none;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+.slider_wrap {
+    margin-top: 55px;
+    width: 100%;
+    min-height: 400px;
+}
+
+.fotorama {
+    background: #787878;
+}
+
+.slider_head {
+    margin-left: 61px;
+    color: #ffffff;
+    font-family: "Roboto";
+    font-size: 46px;
+    font-weight: 300;
+    line-height: 76.17px;
+}
+
+.slider_text {
+    margin-top: 39px;
+    margin-bottom: 39px;
+    color: #ffffff;
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-left: 61px;
+}
+
+.slider_button {
+    margin-left: 61px;
+    padding: 20px 40px;
+    border: 1px solid #ffffff;
+    background-color: #787878;
+    color: #ffffff;
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18px;
+    text-transform: uppercase;
+    outline: none;
+}
