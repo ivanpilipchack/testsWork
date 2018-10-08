@@ -13,6 +13,7 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body class="body">
@@ -50,7 +51,7 @@
 
                 </nav>
                 <div class="menu_prolile">
-                    <img class="icons_profile" src="img/facebook-icon.png" alt="facebook-icon">
+
                     <img class="icons_profile" src="img/twitter-icon.jpg" alt="twitter-icon">
                     <img class="icons_profile" src="img/g--icon-copy.png" alt="g--icon-copy">
                     <img class="icons_profile" src="img/login-icon.jpg" alt="login-icon">
@@ -217,14 +218,16 @@
                      <div class="sign_icon">
                          <h2 class="sign_head">Sign In</h2>
                          <p class="sign_text">Just select your favorite social network to get started</p>
-            
+                         <p class="sign_example">Email</p>   
                     </div>
                     <div class="sign_icon">
                         <h2 class="sign_head">Join the Newsletter</h2>
                         <p class="sign_text_forms">Join the Newsletter
                             Sign up for our personalized daily newsletter</p>
-                            <input  class="email" type="email" placeholder="Enter email address" required>
+                            <form action="" required>
+                            <input  class="email" type="email" placeholder="Enter email address">
                             <button class="submit" type="submit">SIGN UP</button>
+                        </form>
                    </div>     
                 </div>
             </div>
@@ -266,8 +269,11 @@
     </section>
     <!-- end-->
     <!-- linck for javaScript , jQuery, fotorama -->
+    
+
 
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="jv/dist/jquery.validate.js"></script>
     <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
     <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> <!-- 16 KB -->
     <script src="js/index.js"></script>

@@ -29,13 +29,14 @@ html,
     width: 7%;
     background: #56ccc8;
     padding: 21px 16px;
+    text-align: center;
 }
 
 .logo_el {
     background-color: #ffffff;
-    width: 22px;
+    width: 50%;
     height: 3px;
-    margin: 6px 5px;
+    margin: 6px 6px;
     margin-left: 8px;
     display: block;
 }
@@ -43,6 +44,8 @@ html,
 .add {
     background-color: rgb(119, 104, 22);
     box-shadow: 0 0 20px;
+    transform: rotate(180deg);
+    transition: 1s;
 }
 
 .addEls {
@@ -62,6 +65,7 @@ nav {
 
 .menu_lists {
     list-style: none;
+    max-width: 90%;
 }
 
 .lists_punct {
@@ -79,8 +83,8 @@ nav {
 }
 
 .menu_search {
-    margin-left: 170px;
-    margin-right: 20px;
+    margin-left: 70px;
+    margin-right: 10px;
 }
 
 .lists_link:hover {
@@ -88,14 +92,19 @@ nav {
     color: #56ccc8;
 }
 
+.transform {
+    transform: skewX(30deg);
+    transition: 0.3s;
+}
+
 .menu_profile {
-    width: 7%;
+    width: 5%;
     float: left;
 }
 
 .icons_profile {
     margin: 29px 10px;
-    width: 16px;
+    width: 1.2rem;
     height: 16px;
 }
 
@@ -343,6 +352,11 @@ nav {
     transform: rotate(90deg);
 }
 
+.transform_accordions {
+    transform: rotateX(360deg);
+    transition: 1.5s;
+}
+
 .navBar_rigth {
     display: flex;
     width: 50%;
@@ -509,6 +523,15 @@ nav {
     color: #475055;
     font-family: "Roboto";
     font-size: 12px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 28px;
+}
+
+.sign_example {
+    color: #475055;
+    font-family: "Roboto";
+    font-size: 16px;
     font-weight: 400;
     font-style: normal;
     line-height: 28px;

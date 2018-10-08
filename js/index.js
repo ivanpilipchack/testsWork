@@ -5,7 +5,7 @@ $(document).ready(() => {
     const $burgerEls = $('.logo_el');
     const $contact = $('.active');
     const $subMenu = $('.sub');
-    const $menuText = $('.navBar_link');
+    const $menuText = $('.dropdown');
 
     $burger.on('click', () => {
         $dropdown.slideToggle(700, 'linear', () => {
@@ -15,18 +15,16 @@ $(document).ready(() => {
         });
     });
     $menuText.on('mouseenter', () => {
-        $(event.currentTarget).animate({
-            marginLeft: '60px',
-            fontSize: '20px',
-            fontFfamily: 'Charmonman',
-            fontStyle: 'italic'
+        $(event.currentTarget).addClass('transform').animate({
+            paddingLeft: '80px',
+            opacity: '0.7'
         }, 500).on('mouseleave', () => {
-            $(event.currentTarget).animate({
-                marginLeft: '0px',
-                fontSize: '16px',
+            $(event.currentTarget).removeClass('transform').animate({
+                paddingLeft: '15px',
+                opacity: '1'
 
-            })
-        })
+            }, 500);
+        });
     });
 
     //subMenu
@@ -37,6 +35,7 @@ $(document).ready(() => {
     $('.accordion_head').on('click', (event) => {
         $(event.currentTarget).siblings().slideToggle(500, 'linear', () => {
             $(event.currentTarget).parent().toggleClass('opacity');
+            $(event.currentTarget).parent().toggleClass('transform_accordions');
         });
     });
     $('.previous').on('click', (event) => {
@@ -77,5 +76,35 @@ $(document).ready(() => {
         $twitter.attr('src', 'img/follow.png').fadeIn(300);
     });
     //slider animated
+    //value forms 
+    const $hint = $('.sign_example');
+    const $email = $('.email');
+
+    $email.on('keyup', (event) => {
+        $hint.html($(event.currentTarget).val(), () => {
+            $hint.addClass('opacity');
+        });
+    })
+    $(function() {
+        $('#form').validate({
+            rules: {
+                name: {
+                    required: true,
+                    minlength: 2
+                }
+            },
+            messages: {
+                name: {
+                    required: "Поле 'Имя' обязательно к заполнению",
+                    minlength: "Введите не менее 2-х символов в поле 'Имя'"
+                },
+                email: {
+                    required: "Поле 'Email' обязательно к заполнению",
+                    email: "Необходим формат адреса email"
+                },
+                url: "Поле 'Сайт' обязательно к заполнению"
+            }
+        });
+    });
 
 });

@@ -1,0 +1,44 @@
+@media screen and (max-width: 1265px) {
+    html {
+        font-size: 80%;
+    }
+    .lists_punct {
+        margin: 23px 13px;
+    }
+    .logo_el {
+        width: 110%;
+        margin-left: 0px;
+    }
+    nav {
+        width: 68%;
+    }
+    .menu_search {
+        margin-left: 20px;
+        margin-right: 10px;
+    }
+    .navBar_wrap {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .navBar_left {
+        width: 100%;
+    }
+    .navBar_rigth {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+        margin-left: 0px;
+    }
+    .sign_wrap {
+        float: none;
+        width: 100%;
+    }
+    .icons_buttons {
+        width: 100%;
+    }
+    .icons_wrap {
+        width: 100%;
+    }
+}
