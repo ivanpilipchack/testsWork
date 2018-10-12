@@ -6,12 +6,15 @@ $(document).ready(() => {
     const $contact = $('.active');
     const $subMenu = $('.sub');
     const $menuText = $('.dropdown');
+    const $deferentIcons = $('.burger');
+
 
     $burger.on('click', () => {
-        $dropdown.slideToggle(700, 'linear', () => {
+        $dropdown.fadeToggle(700, 'linear', () => {
             $dropdown.toggleClass('opacity');
             $burger.toggleClass('add');
-            $burgerEls.toggleClass('addEls');
+            $deferentIcons.toggleClass('active_logo');
+
         });
     });
     $menuText.on('mouseenter', () => {
@@ -58,6 +61,22 @@ $(document).ready(() => {
 
         });
     });
+    //menuOffset 
+    const $focus = $('.icons_list')
+    const $iconRigth = $('.fa');
+    const $textLeft = $('.icon_text');
+
+    $focus.on('mouseenter', () => {
+        $(event.currentTarget).addClass('addText').animate({
+            marginLeft: '70px',
+
+        }, 500).on('mouseleave', () => {
+            $(event.currentTarget).animate({
+                marginLeft: '0px'
+            })
+        });
+    });
+
     // section icons
     const $hover = $('.icons_list:first');
     const $hoverNext = $('.next');
@@ -84,27 +103,7 @@ $(document).ready(() => {
         $hint.html($(event.currentTarget).val(), () => {
             $hint.addClass('opacity');
         });
-    })
-    $(function() {
-        $('#form').validate({
-            rules: {
-                name: {
-                    required: true,
-                    minlength: 2
-                }
-            },
-            messages: {
-                name: {
-                    required: "Поле 'Имя' обязательно к заполнению",
-                    minlength: "Введите не менее 2-х символов в поле 'Имя'"
-                },
-                email: {
-                    required: "Поле 'Email' обязательно к заполнению",
-                    email: "Необходим формат адреса email"
-                },
-                url: "Поле 'Сайт' обязательно к заполнению"
-            }
-        });
     });
+
 
 });

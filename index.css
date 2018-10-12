@@ -28,24 +28,16 @@ html,
     float: left;
     width: 7%;
     background: #56ccc8;
-    padding: 21px 16px;
+    min-height: 40px;
     text-align: center;
-}
-
-.logo_el {
-    background-color: #ffffff;
-    width: 50%;
-    height: 3px;
-    margin: 6px 6px;
-    margin-left: 8px;
-    display: block;
+    padding: 23px 0px;
 }
 
 .add {
     background-color: rgb(119, 104, 22);
     box-shadow: 0 0 20px;
     transform: rotate(180deg);
-    transition: 1s;
+    transition: 1.2s;
 }
 
 .addEls {
@@ -56,7 +48,7 @@ html,
 /* menu from lincks and icons */
 
 nav {
-    width: 78%;
+    width: 75%;
     float: left;
     background-color: #ffffff;
     margin-left: 0px;
@@ -66,6 +58,7 @@ nav {
 .menu_lists {
     list-style: none;
     max-width: 90%;
+    margin-bottom: 31px;
 }
 
 .lists_punct {
@@ -93,19 +86,34 @@ nav {
 }
 
 .transform {
-    transform: skewX(30deg);
+    transform: skewX(30deg)translate(-35px);
     transition: 0.3s;
 }
 
+.burger {
+    width: 28px;
+    height: 30px;
+}
+
+.active_logo {
+    transform: rotate(-360deg);
+    transition: 0.9s;
+}
+
 .menu_profile {
-    width: 5%;
+    width: 18%;
     float: left;
+    background: #fff;
 }
 
 .icons_profile {
     margin: 29px 10px;
-    width: 1.2rem;
-    height: 16px;
+    width: 1.3rem;
+    height: 17px;
+}
+
+.navBar {
+    margin-top: 10px;
 }
 
 .navBar_wrap {
@@ -353,7 +361,7 @@ nav {
 }
 
 .transform_accordions {
-    transform: rotateX(360deg);
+    transform: rotateZ(360deg);
     transition: 1.5s;
 }
 
@@ -382,6 +390,9 @@ nav {
 }
 
 .fa {
+    position: absolute;
+    margin-top: 0px;
+    margin-left: 0px;
     font-family: "Font Awesome";
     padding: 8px;
     font-size: 20px;
@@ -389,7 +400,6 @@ nav {
     border-radius: 50%;
     text-align: center;
     text-decoration: none;
-    margin: 5px 2px;
     background-color: #c5cdd1;
 }
 
@@ -429,12 +439,16 @@ nav {
 }
 
 .icon_text {
-    margin-left: 18px;
+    margin-left: 48px;
     color: #475055;
     font-family: "Roboto";
     font-size: 16px;
     font-weight: 400;
     line-height: 28px;
+}
+
+.addText {
+    margin-left: 0px;
 }
 
 .icon_text:hover {
@@ -617,4 +631,16 @@ input::-webkit-input-placeholder {
     line-height: 18px;
     text-transform: uppercase;
     outline: none;
+}
+
+.fotorama__dot {
+    background: #ffffff;
+    display: block;
+    width: 8px;
+    height: 8px;
+    position: relative;
+    top: 12px;
+    left: 6px;
+    border-radius: 6px;
+    border: 1px solid #7f7f7f;
 }
