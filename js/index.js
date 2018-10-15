@@ -45,23 +45,34 @@ $(document).ready(() => {
         $(event.currentTarget).toggleClass('add_accordins');
     });
     //user dropDown
-    const $user = $('.icons_profile:last');
-    const $socialIcons = $('.icons_wrap');
+    const $close = $('.hide_menu');
+    const $iconsHide = $('.icons_wrap');
+    const $iconsShow = $('.icons_profile:last');
+    const $textHint = $('.close_hint');
 
-    $user.on('click', () => {
-        $socialIcons.slideDown(600, 'linear', () => {
-            $socialIcons.toggleClass('opacity');
-            $user.attr('src', 'img/internet.png')
-                .hide().delay(300).fadeIn(400).delay(300).toggleClass('user');
-        });
-        $socialIcons.on('mouseleave', () => {
-            $socialIcons.slideUp('600', () => {
-                $user.attr('src', 'img/login-icon.jpg').delay(400).show(400);
-            });
-
-        });
+    $iconsHide.on('mouseenter', () => {
+        $close.show();
     });
-    //menuOffset 
+    $close.on('click', () => {
+        $iconsHide.delay(700).fadeOut(400, 'linear', () => {
+            $iconsShow.attr('src', 'img/login-icon.jpg');
+            $close.delay(700).hide();
+        });
+
+    });
+    $iconsShow.on('click', () => {
+        $iconsShow.attr('src', 'img/internet.png').fadeIn(500, () => {
+            $iconsShow.addClass('transform_internet');
+        })
+
+        $iconsHide.delay(600).slideDown(400);
+    });
+    $close.on('mouseenter', () => {
+            $textHint.text('in order to menu click here >');
+        }).on('mouseleave', () => {
+            $textHint.text('');
+        })
+        //menuOffset 
     const $focus = $('.icons_list')
     const $iconRigth = $('.fa');
     const $textLeft = $('.icon_text');
@@ -94,8 +105,20 @@ $(document).ready(() => {
     }).on('mouseleave', () => {
         $twitter.attr('src', 'img/follow.png').fadeIn(300);
     });
-    //slider animated
-    //value forms 
+    //likes
+    const $like = $('.follow');
+    const $count = $('.number');
+
+
+    $like.on('click', (event) => {
+            $(event.currentTarget).toggleClass('click_likes');
+            $(event.currentTarget).siblings().toggleClass('like');
+            $(event.currentTarget).siblings('.number').text(157);
+            $(event.currentTarget).siblings('.many').text(90);
+
+        })
+        //slider animated
+        //value forms 
     const $hint = $('.sign_example');
     const $email = $('.email');
 

@@ -108,7 +108,7 @@ nav {
 
 .icons_profile {
     margin: 29px 10px;
-    width: 1.3rem;
+    width: 17px;
     height: 17px;
 }
 
@@ -365,6 +365,11 @@ nav {
     transition: 1.5s;
 }
 
+.transform_internet {
+    transform: rotateZ(360deg);
+    transition: 1s;
+}
+
 .navBar_rigth {
     display: flex;
     width: 50%;
@@ -372,7 +377,7 @@ nav {
 }
 
 .icons_wrap {
-    display: none;
+    display: block;
     width: 50%;
     background: #ffffff;
     padding: 20px;
@@ -387,6 +392,22 @@ nav {
     list-style: none;
     padding-left: 0px;
     margin: 15px 0px 15px 19px;
+}
+
+.hide_menu {
+    display: none;
+    bottom: 16px;
+    left: 14px;
+    position: relative;
+    float: right;
+    font-size: 20px;
+    font-family: "Roboto";
+    font-weight: bold;
+    border-radius: 50%;
+    background: #a81515;
+    color: #ffffff;
+    padding: 1px 9px;
+    cursor: pointer;
 }
 
 .fa {
@@ -500,6 +521,7 @@ nav {
 }
 
 .follow {
+    cursor: pointer;
     position: relative;
     width: 24px;
     height: 24px;
@@ -643,4 +665,24 @@ input::-webkit-input-placeholder {
     left: 6px;
     border-radius: 6px;
     border: 1px solid #7f7f7f;
+}
+
+.like {
+    color: rgb(243, 227, 10);
+    text-shadow: 0 0 20px rgb(243, 208, 8);
+}
+
+.click_likes {
+    transform: rotate(360deg);
+    transition: 1.5s;
+}
+
+.close_hint {
+    float: left;
+    position: relative;
+    bottom: 13px;
+    font-size: 15px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    color: rgb(10, 74, 214);
 }

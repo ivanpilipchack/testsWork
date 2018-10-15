@@ -98,6 +98,11 @@
         margin-right: 0px;
         height: 14px;
     }
+    .close_hint {
+        float: none;
+        text-align: center;
+        font-size: 13px;
+    }
     .navBar {
         margin-top: 10px;
     }
